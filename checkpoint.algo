@@ -1,0 +1,25 @@
+ALGORITHM check point
+VAR
+    
+    INTEGER x=0
+    INTEGER y=1
+    INTEGER v= 0
+    STRING vowels = "aeiouAEIOU"
+
+BEGIN
+    Read(sentence)
+    FOR i FROM 0 TO length(sentence) DO
+        x=x+1
+        IF (sentence[i] = " ") THEN
+            y=y+1
+        END_IF
+        IF (sentence[i] in vowels ) THEN
+            v=v+1
+        END_IF
+
+    END_FOR
+    Write("Character count:", x)
+    Write("Word count:", y)
+    Write("Vowel count:", v)
+    
+END
